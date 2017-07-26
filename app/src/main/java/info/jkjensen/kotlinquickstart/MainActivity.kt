@@ -1,9 +1,12 @@
 package info.jkjensen.kotlinquickstart
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.app.Fragment
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : SingleFragmentActivity() {
+    override fun createFragment(): Fragment {
+        // return MyFragment.newInstance()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
